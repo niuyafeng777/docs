@@ -1,6 +1,6 @@
 # Introduction
 
-VuePress is a markdown-centered static site generator. You can write your content (documentations, blogs, etc.) in [Markdown](https://en.wikipedia.org/wiki/Markdown), then VuePress will help you to generate a static site to host them.
+VuePress is a markdown-centered static site generator (SSG). You can write your content (documentations, blogs, etc.) in [Markdown](https://en.wikipedia.org/wiki/Markdown), then VuePress will help you to generate a static site to host them.
 
 The purpose of creating VuePress was to support the documentation of Vue.js and its sub-projects, but now it has been helping a large amount of users to build their documentation, blogs, and other static sites.
 
@@ -14,26 +14,12 @@ During development, we start a normal dev-server, and serve the VuePress site as
 
 During build, we create a server-rendered version of the VuePress site and render the corresponding HTML by virtually visiting each route. This approach is inspired by [Nuxt](https://nuxtjs.org/)'s `nuxt generate` command and other projects like [Gatsby](https://www.gatsbyjs.org/).
 
-## Why Not ...?
+## Relationship with VitePress
 
-### Nuxt
+VitePress can be seen as the younger sibling of VuePress. Both were originally created by Evan You, the author of Vue.js. Today, VitePress is maintained by the Vue.js team, while VuePress is maintained by the VuePress team.
 
-Nuxt is an outstanding Vue SSR framework, and it is capable of doing what VuePress does. But Nuxt is designed for building applications, while VuePress is more lightweight and focused on content-centric static sites.
+The history goes like this: VuePress v0 and v1 were built on top of Webpack. Later, when Evan created Vite, he started a new static site generator based on it — VitePress — reusing some ideas and code from VuePress. At the same time, the community forked the VuePress v2 branch, continued its development, and added support for both Webpack and Vite.
 
-### VitePress
+At one point, we discussed merging the two projects under the VuePress brand. However, over time their goals and technical directions diverged. As a result, the Vue.js team chose to focus on VitePress, while the community — now the VuePress team — took over VuePress and continues to drive its development forward.
 
-VitePress is the little brother of VuePress. It's also created and maintained by our Vue.js team. It's even more lightweight and faster than VuePress. However, as a tradeoff, it's more opinionated and less configurable. For example, it does not support plugins. But VitePress is powerful enough to make your content online if you don't need advanced customizations.
-
-It might not be an appropriate comparison, but you can take VuePress and VitePress as Laravel and Lumen.
-
-### Docsify / Docute
-
-Both are great projects and also Vue-powered. Except they are both fully runtime-driven and therefore not SEO-friendly. If you don’t care for SEO and don’t want to mess with installing dependencies, these are still great choices.
-
-### Hexo
-
-Hexo has been serving the Vue 2.x docs well. The biggest problem is that its theming system is static and string-based - we want to take advantage of Vue for both the layout and the interactivity. Also, Hexo’s Markdown rendering isn’t the most flexible to configure.
-
-### GitBook
-
-We’ve been using GitBook for most of our subproject documentation. However, the primary problem with GitBook is that its development reload performance is intolerable with a large amount of files. The default theme also has a pretty limiting navigation structure, and the theming system is, again, not Vue based. The team behind GitBook is also more focused on turning it into a commercial product rather than an open-source tool.
+As a user, you can choose either project depending on your needs. VitePress is tightly integrated with Vite. VuePress, on the other hand, is designed to support different bundlers: it supports Webpack and Vite today, and open to any other bundlers. In addition, VuePress has an official [ecosystem](https://ecosystem.vuejs.press/) project and provides a wide range of plugins, making it easier to build sites with features.
