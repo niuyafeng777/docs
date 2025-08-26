@@ -228,6 +228,10 @@ heroku login
 
 2. 点击 deploy 按钮。
 
+## CloudRay
+
+请查看 [Deploy Your VuePress Site With CloudRay](https://cloudray.io/articles/how-to-deploy-your-vuepress-site) 。
+
 <!-- 下列平台是中文文档特有的，放在最下方 -->
 
 ## 云开发 CloudBase
