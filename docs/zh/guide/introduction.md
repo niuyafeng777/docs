@@ -14,7 +14,7 @@ VuePress 诞生的初衷是为了支持 Vue.js 及其子项目的文档需求，
 
 在构建过程中，我们会为 VuePress 站点创建一个服务端渲染 (SSR) 的版本，然后通过虚拟访问每一条路径来渲染对应的 HTML 。这种做法的灵感来源于 [Nuxt](https://nuxtjs.org/) 的 `nuxt generate` 命令，以及其他的一些项目，比如 [Gatsby](https://www.gatsbyjs.org/)。
 
-## 与 VitePress 的关系
+## VuePress 与 VitePress 的关系
 
 VitePress 可以看作是 VuePress 的孪生兄弟。它们最初都是由 Vue.js 的作者 Evan You 创建。如今，VitePress 由 Vue.js 团队维护，而 VuePress 则由 VuePress 团队维护。
 

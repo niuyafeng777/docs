@@ -14,7 +14,7 @@ During development, we start a normal dev-server, and serve the VuePress site as
 
 During build, we create a server-rendered version of the VuePress site and render the corresponding HTML by virtually visiting each route. This approach is inspired by [Nuxt](https://nuxtjs.org/)'s `nuxt generate` command and other projects like [Gatsby](https://www.gatsbyjs.org/).
 
-## Relationship with VitePress
+## VuePress and VitePress: The Connection
 
 VitePress can be seen as the younger sibling of VuePress. Both were originally created by Evan You, the author of Vue.js. Today, VitePress is maintained by the Vue.js team, while VuePress is maintained by the VuePress team.
 
